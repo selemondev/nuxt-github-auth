@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { status, data, signIn, signOut } = useSession();
+const { status, signIn } = useSession();
 const handleLogin = async () => {
     await signIn();
     if (status.value === 'authenticated') {
